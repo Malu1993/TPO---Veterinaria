@@ -1,0 +1,55 @@
+*{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+html{
+    font-size: 62,5%
+}
+
+.flex-container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo{
+    display: flex;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.titulos-secciones{
+    text-align: center;
+}
+
+.flex-container-servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-servicios{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+}
+
+.flex-container-clientes{
+    display: flex;
+    justify-content: space-between;
+}
+
+#valores{
+    text-align: center;
+}
+
+.flex-container-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes{
+    width: 3rem;
+    height: 3rem;
+}
