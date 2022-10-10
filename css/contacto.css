@@ -70,11 +70,31 @@ header{
     font-size: 1.4rem;
 }
 
+.titulo1{
+    background-color: #b3e77f;
+    height: 5rem;
+    font-family: Raleway;
+    text-shadow: 0.2rem 0.2rem rgb(134, 134, 134);
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 1.4rem;
+}
+
 .grid-container_1{
     display: grid;
-    grid-template-columns: 10rem 45rem;
-    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
-    align-items: center;
+    grid-template-columns: 20rem 80rem;
+    grid-template-rows: 18rem
+}
+
+.flex-container{
+    display: flex;
+}
+
+#datos{
+    padding: 2rem;
+}
+
+#mensaje{
 }
 
 .grid-container_2{
