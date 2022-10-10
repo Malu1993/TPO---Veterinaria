@@ -72,7 +72,7 @@ header{
 }
 
 .quienesSomos{
-    background-color: #a1d36e;
+    background-color: #b3e77f;
     height: 5rem;
     font-family: Raleway;
     text-shadow: 0.2rem 0.2rem rgb(134, 134, 134);
@@ -86,7 +86,7 @@ header{
     grid-template-columns: 45rem 10rem;
     grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
     align-items: center;
-    background-color: #c1f38e;
+    background-color: #d1f1b1;
 }
 
 .grid-container_1 div p{
@@ -107,7 +107,7 @@ header{
 }
 
 .vision{
-    background-color:#b26fdb;
+    background-color:#bb82df;
     height: 5rem;
     font-family: Raleway;
     text-shadow: 0.2rem 0.2rem rgb(80, 79, 79);
@@ -121,7 +121,7 @@ header{
     grid-template-columns: 10rem 45rem;
     grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
     align-items: center;
-    background-color: #d38bff;
+    background-color: #d59cf8;
 }
 
 #doc{
