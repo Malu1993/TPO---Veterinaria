@@ -13,7 +13,7 @@
         <nav class="flex-container-nav">
             <div class="titulo">
                 <img class="logo" src="Img/logo.png" alt="Logo">
-                <h1 class="nombre"><b>Veterinaria <br> CatDog</b></h1>
+                <h1><b>Veterinaria <br> CatDog</b></h1>
             </div>
             <div class="menu"><a class="link" href="index.html"><b>Home</b></a></div>
             <div class="menu"><a class="link" href="quienessomos.html"><b>¿Quienes somos?</b></a></div>
@@ -21,22 +21,53 @@
             <div class="menu"><a class="link" href="contacto.html"><b>Contacto</b></a></div>
         </nav>
     </header>
-    <br><br><br>
+    <br>
     <main>
-        <div><h1>Contacto</h1></div>
-        <section>
+        <div class="titulo1"><h1>Contactanos</h1></div>
+        <hr>
+        <br>
+        <section  class="formulario">
             <div class="grid-container_1">
-                <div>
+                <div class="texto">
                     Si queres contactarnos por alguna consulta o sacar turno para tu mascota, podes hacerlo a través de nuestras redes o completando el siguiente formulario.
                 </div>
-                <div>
-                    <form action=""></form>
+
+                <div class="formulario">
+                    <p><b>Formulario</b></p>
+                    <form action="https://formspree.io/f/mdojdgqk" method="post">
+                            <br><br>
+                            <div class="flex-container">
+                                <div id="datos">
+                                    <div class="labels"><label for="name"><b>Nombre:</b> </label></div>
+                                    <input type="text" id="name" required>
+                                    <br><br>
+                                    <div class="labels"><label for="surname"><b>Apellido:</b></label></div>
+                                    <input type="text" id="surname" required>
+                                    <br><br>
+                                    <div class="labels"><label for="mail"><b>Correo Electrónico:</b></label></div>
+                                    <input type="email" id="mail" required>
+                                    <br><br>
+                                    <div class="labels"><label for="phone"><b>Telefono de contacto:</b></label></div>
+                                    <input type="tel" id="phone" required>
+                                </div>
+                                <div id="mensaje">
+                                    <label for=""> <b>Mensaje</b>
+                                        <br><br>
+                                        <textarea name="texto" id="" cols="50" rows="15">Escriba aquí su consulta.</textarea>
+                                    </label>
+                                    <br><br>
+                                    <input id="enviar" type="submit" value="Enviar">
+                                </div>
+                            </div>
+                    </form>
                 </div>
             </div>
         </section>
-        <br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+        <br><br>
         <section>
-            <div><h1>¿Dónde encontrarnos?</h1></div>
+            <div class="encontranos"><h1>¿Dónde encontrarnos?</h1></div>
             <br><br>
             <div class="grid-container_2">
                 <div class="datos">
@@ -60,7 +91,7 @@
     <br><br>
     <footer class="flex-container-footer">
         <div class="datos_footer">
-            <p class="horarios"> Horarios de atención:</p>
+            <p class="horarios">Horarios de atención:</p>
                 <br>
             <p>
                 Lunes a Viernes de 9:00 a 21:00 hs
