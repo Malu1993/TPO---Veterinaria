@@ -7,8 +7,8 @@ html{
 }
 
 @font-face {
-    font-family: Gruppo;
-    src: url(Fonts/Gruppo-Regular.ttf)
+    font-family:Peralta;
+    src: url(Fonts/Peralta-Regular.ttf);
 }
 
 @font-face {
@@ -28,7 +28,7 @@ html{
 
 header{
     height:8rem;
-    background-color: #83278F;
+    background-color: #8C377E;
 }
 
 .flex-container-nav{
@@ -41,24 +41,24 @@ header{
 
 .titulo{
     display: flex;
-    font-family: Gruppo;
-    font-size: 1.2rem;
+    font-family: Peralta;
+    font-size: 1.4rem;
     margin-top: 0.1rem;
 }
 
 .titulo h1{
     margin-left: 0.4rem;
-    margin-top: 1rem;
+    color: white;
+    -webkit-text-stroke: 0.01rem #41025c;
     text-shadow: 0.2rem 0.2rem #CC78FF;
     text-decoration: double;
-    margin-top: 1.8rem;
+    margin-top: 1.1rem;
 }
 
 .logo{
     width: 7rem;
     height: 7rem;
 }
-
 
 .menu{
     font-family: Raleway;
@@ -112,12 +112,14 @@ header{
 .clientes{
     height: 15rem;
     border-style: dotted;
-    border-color: #d1f1b1;
+    border-color: #F2B90C;
+    border-width: 0.2rem;
+    padding: 0.5rem;
 }
 
 #valores{
     text-align: center;
-    background-color: #d1f1b1;
+    background-color: #f29f05d2;
     height: 6rem;
     font-family: Monserrat;
     font-size: 1.5rem;
@@ -155,8 +157,9 @@ header{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color:  #d1f1b1;
-    font-family: Yantra;
+    font-family: Raleway;
+    background-color: #F29F05;
+    padding-bottom: 2rem;
 }
 
 .datos_footer{
