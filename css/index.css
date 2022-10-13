@@ -1,9 +1,14 @@
 *{
-    margin: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 html{
-    font-size: 62,5%
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #f4f4f4;
 }
 
 @font-face {
@@ -32,22 +37,17 @@ html{
     background-color: #8C377E;
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
-    height: 6rem;
-    width: 1fr;
-    /* margin-left: 1rem;
-    margin-right: 3rem; */
+    height: 7.5rem;
+    width: 100vw;
     align-items: center;
-    border-bottom: 1px solid #CC78FF;
+    border-bottom: 1px solid #ffffff;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .titulo{
     display: flex;
     align-items: center;
-    padding-left: 3rem;
-    /* font-size: 1.4rem; */
-    /* margin-top: 0.1rem; */
+    padding: 0 8rem;
 }
 
 .nombre{
@@ -55,39 +55,39 @@ html{
     color: white;
     -webkit-text-stroke: 0.01rem #41025c;
     text-shadow: 0.2rem 0.2rem #cc78ff;
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: bold;
     text-decoration: double;
     padding-left: 2rem;
 }
 
 .logo{
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 7rem;
+    height: 7rem;
 }
 
 .menu{
     list-style: none;
     display: flex;
-    font-family: Raleway;
-    padding: 0 3rem 0 0
+    margin-right: 3rem;
 }
 
 .menu li{
-    border-radius: 3px;
-    margin: 0 0.4rem;
+    border-radius: 2rem;
+    margin: 0 0.5rem;
 }
 
 .menu li a{
-    padding: 7px 13px;
+    font-family: Raleway;
+    padding: 0.7rem 1.3rem;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2.6rem;
     text-shadow: 0.2rem 0.2rem rgb(134, 134, 134);
-    display: block;
+    /* display: block; */
     color: #ffff;
 }
 
-.menu li:hover, li.link{
+.menu li:hover, li.activo{
     background-color: rgba(0, 0, 0, 0.3);
     transition: .4s;
 }
@@ -95,37 +95,40 @@ html{
 .boton{
     color: #ffff;
     margin-right: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
     display: none;
 }
 
 ul.mostrar{
-    top: 5rem;
+    top: 6.5rem;
 }
 
-@media screen and(max-width: 952px) {
+@media screen and (max-width: 1300px) {
     .titulo{
-        padding-left: 1.6rem;
+        padding-left: 3rem;
     }
     .nombre{
-        font-size: 1rem;
+        font-size: 2.6rem;
         padding-left: 1rem;
+    }
+    .menu li a{
+        font-size: 2rem;
     }
 }  
 
-@media screen and(max-width: 858px){
+@media screen and (max-width: 1024px){
     .flex-container-nav{
-        height: 5rem;
+        height: 6.5rem;
     }
     .boton{
         display: inline-flex;
     }
     .menu{
         position: fixed;
-        width: 1fr;
-        height: calc(100% - 5rem);
-        background-color: #15001f;
+        width: 100vw;
+        height: calc(100% - 6.5rem);
+        background-color: #414141;
         top: -100vh;
         text-align: center;
         transition: all .4s;
@@ -133,8 +136,8 @@ ul.mostrar{
     }
 
     .menu li{
-        margin: 2rem 0 0 0;
-        line-height: 2rem;
+        margin: 3rem 0 0 0;
+        line-height: 3rem;
     }
 
     .menu li:hover{
@@ -142,7 +145,7 @@ ul.mostrar{
     }
 
     .menu li a{
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: #ffff;
         font-weight: bold;
     }
@@ -151,9 +154,18 @@ ul.mostrar{
         color: #CC78FF;
     }
 
+    .titulo{
+        padding-left: 3rem;
+    }
+
     .nombre{
-        font-size: 0.7rem;
-        padding-left: 0.7rem;
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    .logo{
+        width: 6rem;
+        height: 6rem;
     }
 }
 
@@ -177,13 +189,30 @@ ul.mostrar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1rem;
+    margin: 0 8rem;
+    align-items: center;
+    height: 12rem;
+    /* background-color: red; */
 }
+
+/* #servicios-index{
+    background-color: red;
+    display: flex;
+} */
 
 .img-servicios{
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
+}
+
+#iconos{
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+#iconos:hover{
+    transform: scale(1.2);
 }
 
 .flex-container-clientes{

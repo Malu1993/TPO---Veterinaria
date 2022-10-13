@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/b75777cf68.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
     <title>Veterinaria CatDog</title>
 </head>
 <body>
     <header>
         <nav class="flex-container-nav">
-            <label class="titulo">
+            <div class="titulo">
                 <img class="logo" src="Img/logo.png" alt="Logo">
-                <h1 class="nombre">CatDog</h1>
-            </label>
+                <h1 class="nombre"> Veterinaria CatDog</h1>
+            </div>
             
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="quienessomos.html">¿Quienes somos?</a></li>
+                <li><a href="quienessomos.html">Sobre nosotros</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <span class="boton"><i class="fa fa-bars"></i></span>
-        </nav>
-        
+        </nav>  
     </header>
     
     <main>
@@ -35,24 +35,24 @@
                 <h1 class="animate__animated animate__slideInLeft">Servicios</h1>
             </div>
             <br><br>
-            <div class="flex-container-servicios">
+            <div id="servicios-index" class="flex-container-servicios">
                 <div class="animate__animated animate__zoomIn">
-                    <a href="servicios.html#Ecografia"><img class="img-servicios" src="Img/Servicios/Ecografia.png" alt="Ecografias"></a>
+                    <a href="servicios.html#Ecografia"><img id="iconos" class="img-servicios" src="Img/Servicios/Ecografia.png" alt="Ecografias"></a>
                 </div>
                 <div class="animate__animated animate__zoomIn">
-                    <a href="servicios.html#Cirugia"><img class="img-servicios" src="Img/Servicios/Cirugias.png" alt="Cirugias"></a>
+                    <a href="servicios.html#Cirugia"><img id="iconos" class="img-servicios" src="Img/Servicios/Cirugias.png" alt="Cirugias"></a>
                 </div>
                 <div class="animate__animated animate__zoomIn">
-                    <a href="servicios.html#Internaciones"><img class="img-servicios" src="Img/Servicios/Internación.png" alt="Internaciones"></a>
+                    <a href="servicios.html#Internaciones"><img id="iconos" class="img-servicios" src="Img/Servicios/Internación.png" alt="Internaciones"></a>
+                </div>
+                <div class="animate__animated animate__zoomIn iconos">
+                    <a href="servicios.html#Radio"><img id="iconos" class="img-servicios" src="Img/Servicios/Radiografias.png" alt="Radiografia"></a>
                 </div>
                 <div class="animate__animated animate__zoomIn">
-                    <a href="servicios.html#Radio"><img class="img-servicios" src="Img/Servicios/Radiografias.png" alt="Radiografia"></a>
+                    <a href="servicios.html#Vacuna"><img id="iconos" class="img-servicios" src="Img/Servicios/Vacunación.png" alt="Vacunación"></a>
                 </div>
                 <div class="animate__animated animate__zoomIn">
-                    <a href="servicios.html#Vacuna"><img class="img-servicios" src="Img/Servicios/Vacunación.png" alt="Vacunación"></a>
-                </div>
-                <div class="animate__animated animate__zoomIn">
-                    <a href="servicios.html#Laboratorio"><img class="img-servicios" src="Img/Servicios/Laboratorio.png" alt="Laboratorio"></a>
+                    <a href="servicios.html#Laboratorio"><img id="iconos" class="img-servicios" src="Img/Servicios/Laboratorio.png" alt="Laboratorio"></a>
                 </div>
             </div>
         </section>
