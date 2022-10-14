@@ -164,51 +164,51 @@ ul.mostrar{
     }
 }
 
-
+/* ----- MAIN ----- */
 
 .titulo1{
-    height: 5rem;
+    height: 8rem;
     color: #F29F05;
     font-family: Raleway;
     text-shadow: 0.2rem 0.2rem rgb(201, 201, 201);
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-align: center;
-    padding-top: 1.4rem;
+    padding-top: 2.2rem;
 }
 
 .formulario{
-    margin-left: 5rem;
+    margin-left: 8rem;
     font-family: Raleway;
 }
 
 
 .formulario p{
-    margin-left: 20rem;
-    font-size: 1.5rem;
+    margin-left: 32rem;
+    font-size: 2.4rem;
 }
 
 .grid-container_1{
     display: grid;
-    grid-template-columns: 20rem 80rem;
-    grid-template-rows: 18rem
+    grid-template-columns: 32rem 128rem;
+    grid-template-rows: 28.8rem
 }
 
 .texto{
-    
+    font-size: 1.8rem;
     height: fit-content;
-    padding-left: 2rem;
-    line-height: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 3rem;
+    padding-left: 3.2rem;
+    line-height: 3.2rem;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    padding-right: 4.8rem;
     border-color: #A449A6;
-    border-width: 0.2rem;
-    border-radius: 0.2rem;
+    border-width: 0.3rem;
+    border-radius: 0.3rem;
     border-style: solid;
     background-color: #BF84B5;
     font-family: Monserrat;
-    margin-left: 1rem;
-    margin-top: 4rem;
+    margin-left: 1.6rem;
+    margin-top: 6.4rem;
 }
 
 .flex-container{
@@ -216,18 +216,20 @@ ul.mostrar{
 }
 
 #datos{
-    padding: 0.1rem;
-    line-height: 2rem;
-    padding-left: 7rem;
+    padding: 0.2rem;
+    line-height: 3.2rem;
+    padding-left: 11.2rem;
+    font-size: 1.5rem;
 }
 
 .labels{
-    width: 10rem;
+    width: 16rem;
 }
 
 #mensaje{
-    padding-left: 5rem;
+    padding-left: 8rem;
     align-items: flex-end;
+    font-size: 1.5rem;
 }
 
 #enviar{
@@ -242,29 +244,29 @@ ul.mostrar{
 }
 
 .encontranos{
-    height: 5rem;
+    height: 8rem;
     color: #F29F05;
     font-family: Raleway;
     text-shadow: 0.2rem 0.2rem rgb(201, 201, 201);
-    font-size: 1.2rem;
-    margin-left: 5rem;
+    font-size: 2rem;
+    margin-left: 8rem;
 }
 
 .grid-container_2{
     display: grid;
-    grid-template-columns: 20rem 80rem;
-    grid-template-rows: 18rem
+    grid-template-columns: 32rem 128rem;
+    grid-template-rows: 28.8rem
 }
 
 .datos{
     background-color: #d398f8;
     font-family: Monserrat;
-    height: 18.9rem;
+    height: 30.2rem;
 }
 
 .datos p{
-    margin-left: 0.5rem;
-    margin-top: 5rem;
+    margin-left: 0.8rem;
+    margin-top: 8rem;
 }
 
 .flex-container-footer{
@@ -273,18 +275,19 @@ ul.mostrar{
     flex-wrap: wrap;
     font-family: Raleway;
     background-color: #F2B90C;
-    padding-bottom: 2rem;
+    padding-bottom: 3.2rem;
 }
 
 .datos_footer{
-    margin-top: 1rem;
+    margin-top: 1.6rem;
 }
 
-.horarios{
+.datos_footer p{
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .redes{
-    width: 3rem;
-    height: 3rem;
+    width: 4.8rem;
+    height: 4.8rem;
 }
