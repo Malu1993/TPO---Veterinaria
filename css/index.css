@@ -280,8 +280,9 @@ ul.mostrar{
     margin-top: 1.6rem;
 }
 
-.horarios{
+.datos_footer p{
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .redes{
