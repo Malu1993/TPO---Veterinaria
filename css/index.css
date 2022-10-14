@@ -174,12 +174,13 @@ ul.mostrar{
 
 .seccion-1{
     background-color: #efdaf1;
-    height: 4rem;
+    height: 6.4rem;
 }
 
 .seccion-1 h1{
+    font-size: 3.5rem;
     text-align: center;
-    line-height: 3.5rem;
+    line-height: 5.6rem;
     font-family: Raleway;
     color: #83278F;
     text-shadow: 0.2rem 0.2rem rgb(214, 214, 214);
@@ -189,9 +190,9 @@ ul.mostrar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 8rem;
+    margin: 0 12.6rem;
     align-items: center;
-    height: 12rem;
+    height: 19.2rem;
     /* background-color: red; */
 }
 
@@ -201,8 +202,8 @@ ul.mostrar{
 } */
 
 .img-servicios{
-    width: 9rem;
-    height: 9rem;
+    width: 14.4rem;
+    height: 14.4rem;
     border-radius: 50%;
 }
 
@@ -219,51 +220,51 @@ ul.mostrar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1rem;
+    margin: 1.6rem;
 }
 
 .clientes{
-    height: 15rem;
+    height: 24rem;
     border-style: dotted;
     border-color: #F2B90C;
-    border-width: 0.2rem;
-    padding: 0.5rem;
+    border-width: 0.3rem;
+    padding: 0.8rem;
 }
 
 #valores{
     text-align: center;
     background-color: #f29f05d2;
-    height: 6rem;
+    height: 9.6rem;
     font-family: Monserrat;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
 }
 
 #valores a{
-    line-height: 5.5rem;
+    line-height: 8.8rem;
     text-decoration: none;
     color: black;
 }
 
 #valores a:hover{
-    font-size: 2rem;
+    font-size: 3.2rem;
     color: white;
 }
 
 .grid-container_2{
     display: grid;
-    grid-template-columns: 20rem 80rem;
-    grid-template-rows: 18rem
+    grid-template-columns: 32rem 128rem;
+    grid-template-rows: 28.8rem;
 }
 
 .datos{
     background-color: #d398f8;
     font-family: Monserrat;
-    height: 18.9rem;
+    height: 30rem;
 }
 
 .datos p{
-    margin-left: 0.5rem;
-    margin-top: 5rem;
+    margin-left: 0.8rem;
+    margin-top: 8rem;
 }
 
 .flex-container-footer{
@@ -272,11 +273,11 @@ ul.mostrar{
     flex-wrap: wrap;
     font-family: Raleway;
     background-color: #F29F05;
-    padding-bottom: 2rem;
+    padding-bottom: 3.2rem;
 }
 
 .datos_footer{
-    margin-top: 1rem;
+    margin-top: 1.6rem;
 }
 
 .horarios{
@@ -284,6 +285,6 @@ ul.mostrar{
 }
 
 .redes{
-    width: 3rem;
-    height: 3rem;
+    width: 4.8rem;
+    height: 4.8rem;
 }
