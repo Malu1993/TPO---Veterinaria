@@ -285,8 +285,9 @@ ul.mostrar{
 }
 
 .datos p{
-    margin-left: 0.8rem;
+    margin-left: 2rem;
     margin-top: 8rem;
+    font-size: medium;
 }
 
 /* ----- FOOTER ----- */
