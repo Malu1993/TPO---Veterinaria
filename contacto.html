@@ -38,21 +38,29 @@
 
                 <div class="formulario">
                     <p><b>Formulario</b></p>
-                    <form action="https://formspree.io/f/mdojdgqk" method="post">
+                    <form id="formulario1" action="https://formspree.io/f/mdojdgqk" method="post">
                             <br><br>
                             <div class="flex-container">
                                 <div id="datos">
-                                    <div class="labels"><label for="name"><b>Nombre:</b> </label></div>
-                                    <input type="text" id="name" required>
-                                    <br><br>
-                                    <div class="labels"><label for="surname"><b>Apellido:</b></label></div>
-                                    <input type="text" id="surname" required>
-                                    <br><br>
-                                    <div class="labels"><label for="mail"><b>Correo Electrónico:</b></label></div>
-                                    <input type="email" id="mail" required>
-                                    <br><br>
-                                    <div class="labels"><label for="phone"><b>Telefono de contacto:</b></label></div>
-                                    <input type="tel" id="phone" required>
+                                    <div class="labels" id="div-nombre">
+                                        <label for="name"><b>Nombre:</b> </label>
+                                        <input type="text" name="nombre" id="nombre" required>
+                                    </div>
+                                    
+                                    <div class="labels" id="div-apellido">
+                                        <label for="surname"><b>Apellido:</b></label>
+                                        <input type="text" name="apellido" id="apellido" required>
+                                    </div>
+                                    
+                                    <div class="labels" id="div-correo">
+                                        <label for="mail"><b>Correo Electrónico:</b></label>
+                                        <input type="email" name="correo" id="correo" required>
+                                    </div>
+                                    
+                                    <div class="labels" id="div-telefono">
+                                        <label for="phone"><b>Telefono de contacto:</b></label>
+                                        <input type="tel" name="telefono" id="telefono" required>
+                                    </div>
                                 </div>
                                 <div id="mensaje">
                                     <label for=""> <b>Mensaje</b>
@@ -95,7 +103,7 @@
     <br><br>
     <footer class="flex-container-footer">
         <div class="datos_footer">
-            <p>Horarios de atención:</p>
+            <p><b>Horarios de atención:</b></p>
                 <br>
             <p>
                 Lunes a Viernes de 9:00 a 21:00 hs
@@ -110,8 +118,12 @@
                 Encontranos en redes:
             </p>
             <br>
-            <a href=""><img class="redes" src="Img/facebook-logo-clipart-vector-8.png" alt="Facebook"></a>
-            <a href=""><img class="redes" src="Img/instagram-app-icon-instagram-logos-brand-17.png" alt="Instagram"></a>
+            <div class="fotos-redes">
+                <a href="https://www.facebook.com/profile.php?id=100063555699722" target="_blank"><img class="redes" src="Img/facebook-logo-clipart-vector-8.png" alt="Facebook"></a>
+                <a href=""><img class="redes" src="Img/instagram-app-icon-instagram-logos-brand-17.png" alt="Instagram"></a>
+            </div>
         </div>
     </footer>
+
+    <script src="js/contacto.js"></script>
 </body>
