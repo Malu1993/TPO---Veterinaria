@@ -32,7 +32,7 @@ html{
     background-color: #8C377E;
     display: flex;
     justify-content: space-between;
-    height: 7.5rem;
+    height: 12rem;
     width: 100vw;
     align-items: center;
     border-bottom: 1px solid #ffffff;
@@ -42,7 +42,7 @@ html{
 .titulo{
     display: flex;
     align-items: center;
-    padding: 0 8rem;
+    padding: 3rem;
 }
 
 .nombre{
@@ -57,8 +57,8 @@ html{
 }
 
 .logo{
-    width: 7rem;
-    height: 7rem;
+    width: 11rem;
+    height: 11rem;
 }
 
 .menu{
@@ -226,6 +226,12 @@ ul.mostrar{
     width: 16rem;
 }
 
+.labels-incorrecto{
+    width: 16rem;
+    color: red;
+    border: red;
+}
+
 #mensaje{
     padding-left: 8rem;
     align-items: flex-end;
@@ -269,12 +275,14 @@ ul.mostrar{
     margin-top: 8rem;
 }
 
+/* ----- FOOTER ----- */
+
 .flex-container-footer{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-family: Raleway;
-    background-color: #F2B90C;
+    background-color: #F29F05;
     padding-bottom: 3.2rem;
 }
 
@@ -290,4 +298,8 @@ ul.mostrar{
 .redes{
     width: 4.8rem;
     height: 4.8rem;
+}
+
+.fotos-redes{
+    padding-left: 4rem;
 }
