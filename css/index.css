@@ -266,17 +266,23 @@ ul.mostrar{
     width: 100vw;
     font-family: Monserrat;
     font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #valores a{
-    line-height: 8.8rem;
     text-decoration: none;
     color: black;
+    transform: scale(1);
+    transition: transform 0.2s ease;
 }
 
 #valores a:hover{
-    font-size: 3.2rem;
     color: white;
+    transform: scale(1.2);
+
 }
 
 .grid-container_2{
@@ -318,7 +324,7 @@ ul.mostrar{
     flex-wrap: wrap;
     font-family: Raleway;
     background-color: #F29F05;
-    padding-bottom: 3.2rem;
+    padding: 1rem 0 3.5rem 0;
     width: 100vw;
 }
 
