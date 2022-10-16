@@ -9,7 +9,10 @@ html{
 
 body{
     background-color: #f4f4f4;
+    max-width: 100% !important;
+    /* overflow-x: hidden !important; */
 }
+
 
 @font-face {
     font-family:Peralta;
@@ -37,7 +40,7 @@ body{
     background-color: #8C377E;
     display: flex;
     justify-content: space-between;
-    height: 7.5rem;
+    height: 12rem;
     width: 100vw;
     align-items: center;
     border-bottom: 1px solid #ffffff;
@@ -47,7 +50,7 @@ body{
 .titulo{
     display: flex;
     align-items: center;
-    padding: 0 8rem;
+    padding: 3rem;
 }
 
 .nombre{
@@ -62,8 +65,8 @@ body{
 }
 
 .logo{
-    width: 7rem;
-    height: 7rem;
+    width: 11rem;
+    height: 11rem;
 }
 
 .menu{
@@ -83,7 +86,6 @@ body{
     text-decoration: none;
     font-size: 2.6rem;
     text-shadow: 0.2rem 0.2rem rgb(134, 134, 134);
-    /* display: block; */
     color: #ffff;
 }
 
@@ -173,6 +175,10 @@ ul.mostrar{
 /* ----- MAIN ----- */
 /********************/
 
+#servicios_margen{
+    margin-top: 5rem;
+}
+
 .seccion-1{
     background-color: #efdaf1;
     height: 6.4rem;
@@ -194,13 +200,8 @@ ul.mostrar{
     flex-wrap: wrap;
     margin: 0 12.6rem;
     align-items: center;
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
-
-/* #servicios-index{
-    background-color: red;
-    display: flex;
-} */
 
 #fondo{
     display: flex;
@@ -280,26 +281,37 @@ ul.mostrar{
 
 .grid-container_2{
     display: grid;
-    /* grid-template-columns: 32rem 128rem; */
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1, auto);
-    gap: 1rem;
+    gap: 2rem;
+    width: 90%;
+    margin: 2rem auto;
+    min-height: 25rem;
 }
 
 #datos{
     background-color: #d398f8;
     font-family: Monserrat;
-    height: 30rem;
 }
 
 #datos p{
-    margin-left: 0.8rem;
-    margin-top: 8rem;
+    padding: 8rem 3rem;
+    font-size: medium;
 }
 
 #mapa{
-    background-color: #a00;
+    /* background-color: #a00; */
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
+
+#mapa iframe{
+    height: 100%;
+    width: 100%;
+}
+
+/* ----- FOOTER ----- */
+
 .flex-container-footer{
     display: flex;
     justify-content: space-evenly;
@@ -322,4 +334,8 @@ ul.mostrar{
 .redes{
     width: 4.8rem;
     height: 4.8rem;
+}
+
+.fotos-redes{
+    padding-left: 4rem;
 }

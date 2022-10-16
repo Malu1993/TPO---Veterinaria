@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/b75777cf68.js" crossorigin="anonymous"></script>
-    <script src="app.js" defer></script>
     <title>Veterinaria CatDog</title>
 </head>
 <body>
@@ -29,9 +28,9 @@
     </header>
     
     <main>
-        <br><br>
+
         <section>
-            <div class="seccion-1">
+            <div id="servicios_margen" class="seccion-1">
                 <h1 class="animate__animated animate__slideInLeft">Servicios</h1>
             </div>
            
@@ -108,7 +107,8 @@
                     </p>
                 </div>
                 <div id="mapa" class="grid-items">
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1247709169547!2d-58.3704915233501!3d-34.72724922546541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332acc1f82e0f%3A0x882c8ecc5bac0499!2sGral.%20Pico%202378%2C%20B1825GFQ%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1664318491164!5m2!1ses!2sar" width="980" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1247709169547!2d-58.3704915233501!3d-34.72724922546541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332acc1f82e0f%3A0x882c8ecc5bac0499!2sGral.%20Pico%202378%2C%20B1825GFQ%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1664318491164!5m2!1ses!2sar" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
                 </div>
             </div>
         </section>
@@ -116,7 +116,7 @@
 <br><br>
     <footer class="flex-container-footer">
         <div class="datos_footer">
-            <p> Horarios de atención:</p>
+            <p><b>Horarios de atención:</b></p>
                 <br>
             <p>
                 Lunes a Viernes de 9:00 a 21:00 hs
@@ -131,9 +131,12 @@
                 Encontranos en redes:
             </p>
             <br>
-            <a href="https://www.facebook.com/profile.php?id=100048812239972" target="_blank"><img class="redes" src="Img/facebook-logo-clipart-vector-8.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/veterinaria_cat_dog/" target="_blank"><img class="redes" src="Img/instagram-app-icon-instagram-logos-brand-17.png" alt="Instagram"></a>
+            <div class="fotos-redes">
+                <a href="https://www.facebook.com/profile.php?id=100063555699722" target="_blank"><img class="redes" src="Img/facebook-logo-clipart-vector-8.png" alt="Facebook"></a>
+                <a href=""><img class="redes" src="Img/instagram-app-icon-instagram-logos-brand-17.png" alt="Instagram"></a>
+            </div>
         </div>
     </footer>
+    <script src="js/app.js" defer></script>
 </body>
 </html>

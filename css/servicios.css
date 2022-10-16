@@ -6,6 +6,12 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    background-color: #f4f4f4;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 @font-face {
     font-family:Peralta;
     src: url(Fonts/Peralta-Regular.ttf);
@@ -22,7 +28,7 @@ html{
     background-color: #8C377E;
     display: flex;
     justify-content: space-between;
-    height: 7.5rem;
+    height: 12rem;
     width: 100vw;
     align-items: center;
     border-bottom: 1px solid #ffffff;
@@ -32,7 +38,7 @@ html{
 .titulo{
     display: flex;
     align-items: center;
-    padding: 0 8rem;
+    padding: 3rem;
 }
 
 .nombre{
@@ -47,8 +53,8 @@ html{
 }
 
 .logo{
-    width: 7rem;
-    height: 7rem;
+    width: 11rem;
+    height: 11rem;
 }
 
 .menu{
@@ -213,6 +219,8 @@ p{
 }
 
 
+/* ----- FOOTER ----- */
+
 .flex-container-footer{
     display: flex;
     justify-content: space-evenly;
@@ -234,4 +242,8 @@ p{
 .redes{
     width: 4.8rem;
     height: 4.8rem;
+}
+
+.fotos-redes{
+    padding-left: 4rem;
 }

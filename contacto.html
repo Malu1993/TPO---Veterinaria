@@ -38,21 +38,29 @@
 
                 <div class="formulario">
                     <p><b>Formulario</b></p>
-                    <form action="https://formspree.io/f/mdojdgqk" method="post">
+                    <form id="formulario1" action="https://formspree.io/f/mdojdgqk" method="post">
                             <br><br>
                             <div class="flex-container">
                                 <div id="datos">
-                                    <div class="labels"><label for="name"><b>Nombre:</b> </label></div>
-                                    <input type="text" id="name" required>
-                                    <br><br>
-                                    <div class="labels"><label for="surname"><b>Apellido:</b></label></div>
-                                    <input type="text" id="surname" required>
-                                    <br><br>
-                                    <div class="labels"><label for="mail"><b>Correo Electrónico:</b></label></div>
-                                    <input type="email" id="mail" required>
-                                    <br><br>
-                                    <div class="labels"><label for="phone"><b>Telefono de contacto:</b></label></div>
-                                    <input type="tel" id="phone" required>
+                                    <div class="labels" id="div-nombre">
+                                        <label for="name"><b>Nombre:</b> </label>
+                                        <input type="text" name="nombre" id="nombre" required>
+                                    </div>
+                                    
+                                    <div class="labels" id="div-apellido">
+                                        <label for="surname"><b>Apellido:</b></label>
+                                        <input type="text" name="apellido" id="apellido" required>
+                                    </div>
+                                    
+                                    <div class="labels" id="div-correo">
+                                        <label for="mail"><b>Correo Electrónico:</b></label>
+                                        <input type="email" name="correo" id="correo" required>
+                                    </div>
+                                    
+                                    <div class="labels" id="div-telefono">
+                                        <label for="phone"><b>Telefono de contacto:</b></label>
+                                        <input type="tel" name="telefono" id="telefono" required>
+                                    </div>
                                 </div>
                                 <div id="mensaje">
                                     <label for=""> <b>Mensaje</b>
@@ -74,18 +82,18 @@
             <div class="encontranos"><h1>¿Dónde encontrarnos?</h1></div>
             <br><br>
             <div class="grid-container_2">
-                <div class="datos">
+                <div id="direccion" class="grid-items">
                     <p>
-                        <u>Dirección:</u> Gral. Pico 2378, Lanús.
-                        <br><br><br>
-                        <u>Telefono:</u> (011) 4245-8711
-                        <br><br><br>
-                        <a href="">Whatsapp</a>
-                        </p>
+                    <u>Dirección:</u> Gral. Pico 2378, Lanús.
+                    <br><br><br>
+                    <u>Telefono:</u> (011) 4245-8711
+                    <br><br><br>
+                    <a href="">Whatsapp</a>
                     </p>
                 </div>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1247709169547!2d-58.3704915233501!3d-34.72724922546541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332acc1f82e0f%3A0x882c8ecc5bac0499!2sGral.%20Pico%202378%2C%20B1825GFQ%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1664318491164!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="mapa" class="grid-items">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1247709169547!2d-58.3704915233501!3d-34.72724922546541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332acc1f82e0f%3A0x882c8ecc5bac0499!2sGral.%20Pico%202378%2C%20B1825GFQ%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1664318491164!5m2!1ses!2sar" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
                 </div>
             </div>
         </section>
@@ -95,7 +103,7 @@
     <br><br>
     <footer class="flex-container-footer">
         <div class="datos_footer">
-            <p>Horarios de atención:</p>
+            <p><b>Horarios de atención:</b></p>
                 <br>
             <p>
                 Lunes a Viernes de 9:00 a 21:00 hs
@@ -110,8 +118,12 @@
                 Encontranos en redes:
             </p>
             <br>
-            <a href=""><img class="redes" src="Img/facebook-logo-clipart-vector-8.png" alt="Facebook"></a>
-            <a href=""><img class="redes" src="Img/instagram-app-icon-instagram-logos-brand-17.png" alt="Instagram"></a>
+            <div class="fotos-redes">
+                <a href="https://www.facebook.com/profile.php?id=100063555699722" target="_blank"><img class="redes" src="Img/facebook-logo-clipart-vector-8.png" alt="Facebook"></a>
+                <a href=""><img class="redes" src="Img/instagram-app-icon-instagram-logos-brand-17.png" alt="Instagram"></a>
+            </div>
         </div>
     </footer>
+
+    <script src="js/contacto.js"></script>
 </body>
