@@ -10,7 +10,7 @@ html{
 body{
     background-color: #f4f4f4;
     max-width: 100% !important;
-    /* overflow-x: hidden !important; */
+    overflow-x: hidden !important;
 }
 
 
@@ -35,6 +35,14 @@ body{
 }
 
 /* ----- HEADER ----- */
+
+.header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 .flex-container-nav{
     background-color: #8C377E;
@@ -106,93 +114,32 @@ ul.mostrar{
     top: 6.5rem;
 }
 
-@media screen and (max-width: 1300px) {
-    .titulo{
-        padding-left: 3rem;
-    }
-    .nombre{
-        font-size: 2.6rem;
-        padding-left: 1rem;
-    }
-    .menu li a{
-        font-size: 2rem;
-    }
-}  
 
-@media screen and (max-width: 1024px){
-    .flex-container-nav{
-        height: 6.5rem;
-    }
-    .boton{
-        display: inline-flex;
-    }
-    .menu{
-        position: fixed;
-        width: 100vw;
-        height: calc(100% - 6.5rem);
-        background-color: #414141;
-        top: -100vh;
-        text-align: center;
-        transition: all .4s;
-        flex-direction: column;
-    }
-
-    .menu li{
-        margin: 3rem 0 0 0;
-        line-height: 3rem;
-    }
-
-    .menu li:hover{
-        background: none;
-    }
-
-    .menu li a{
-        font-size: 2.5rem;
-        color: #ffff;
-        font-weight: bold;
-    }
-
-    .menu li a:hover{
-        color: #CC78FF;
-    }
-
-    .titulo{
-        padding-left: 3rem;
-    }
-
-    .nombre{
-        font-size: 2.5rem;
-        padding-left: 1rem;
-    }
-
-    .logo{
-        width: 6rem;
-        height: 6rem;
-    }
-}
 
 /********************/
 /* ----- MAIN ----- */
 /********************/
 
-#servicios_margen{
-    margin-top: 5rem;
-}
-
 .seccion-1{
     background-color: #efdaf1;
-    height: 6.4rem;
     width: 100vw;
 }
 
 .seccion-1 h1{
     font-size: 3.5rem;
     text-align: center;
-    line-height: 5.6rem;
+    /* line-height: 5.6rem; */
     font-family: Raleway;
     color: #83278F;
     text-shadow: 0.2rem 0.2rem rgb(214, 214, 214);
+    padding: 1.8rem 0;
 }
+
+/* -----Servicios----- */
+#servicios_margen{
+    margin-top: 15rem;
+}
+
 
 .flex-container-servicios{
     display: flex;
@@ -244,6 +191,9 @@ ul.mostrar{
     opacity: 4;
 }
 
+
+/* ----- Clientes ----- */
+
 .flex-container-clientes{
     display: flex;
     justify-content: space-between;
@@ -251,13 +201,17 @@ ul.mostrar{
     margin: 1.6rem;
 }
 
-.clientes{
+#clientes{
+    border-radius: 8%;
     height: 24rem;
     border-style: dotted;
     border-color: #F2B90C;
     border-width: 0.3rem;
     padding: 0.8rem;
 }
+
+
+/* ----- Conoce los valores de nuestra ... ----- */
 
 #valores{
     text-align: center;
@@ -284,6 +238,8 @@ ul.mostrar{
     transform: scale(1.2);
 
 }
+
+/* ----- Sección mapa ----- */
 
 .grid-container_2{
     display: grid;
@@ -344,4 +300,223 @@ ul.mostrar{
 
 .fotos-redes{
     padding-left: 4rem;
+}
+
+
+@media screen and (max-width: 1265px) {
+
+    .header{
+        z-index: 1;
+    }
+
+    .titulo{
+        padding-left: 3rem;
+    }
+    .nombre{
+        font-size: 2.6rem;
+        padding-left: 1rem;
+    }
+    .menu li a{
+        font-size: 2rem;
+    }
+    
+    .seccion-1 h1{
+        font-size: 3.5rem;
+        line-height: 5rem;
+        padding: 1rem 0;
+    }
+
+    /* servicios */
+    #servicios_margen{
+        margin-top: 15rem;
+    }
+    
+    .flex-container-servicios{
+        margin: 0 8.9rem;
+        padding: 4.9rem 0;
+    }
+    
+    #fondo{
+        width: 13rem;
+        height: 13rem;
+    }
+    
+    #fondo p{
+        font-size: 2.2rem;  
+    }
+    
+    .img-servicios{
+        width: 13rem;
+        height: 13rem;
+    }
+
+    
+    /* clientes */
+    #clientes{
+        height: 18rem;
+    }
+}  
+
+@media screen and (max-width: 1010px){
+    .header{
+        z-index: 1;
+    }
+
+    .flex-container-nav{
+        height: 6.5rem;
+    }
+    .boton{
+        display: inline-flex;
+    }
+    .menu{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 6.5rem);
+        background-color: rgba(7, 0, 19, 0.9);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .menu li{
+        margin: 3rem 0 0 0;
+        line-height: 3rem;
+    }
+
+    .menu li:hover{
+        background: none;
+    }
+
+    .menu li a{
+        font-size: 2.5rem;
+        color: #ffff;
+        font-weight: bold;
+    }
+
+    .menu li a:hover{
+        color: #CC78FF;
+    }
+
+    .titulo{
+        padding-left: 3rem;
+    }
+
+    .nombre{
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    .logo{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .seccion-1 h1{
+        font-size: 2.4rem;
+        line-height: 5rem;
+        padding: 0;
+    }
+
+    /* servicios */
+    #servicios_margen{
+        margin-top: 9rem;
+    }
+    
+    .flex-container-servicios{
+        margin: 0 6rem;
+        padding: 3.5rem 0;
+    }
+    
+    #fondo{
+        width: 9rem;
+        height: 9rem;
+        margin: 0.3rem 0.3rem;
+    }
+    
+    #fondo p{
+        font-size: 1.5rem;  
+    }
+    
+    .img-servicios{
+        width: 9rem;
+        height: 9rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    
+    /* clientes */
+    #clientes{
+        height: 12rem;
+        margin: 0.2rem;
+    }
+
+
+    /* Mapa */
+    .grid-container_2{
+        gap: 2rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
+    
+    #datos{
+
+    }
+    
+    #datos p{
+        padding: 6rem 2rem;
+        font-size: small;
+    }
+    
+    #mapa{
+        /* background-color: #a00; */
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    
+    #mapa iframe{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .seccion-1 h1{
+        font-size: 2.2rem;
+        line-height: 4.5rem;
+    }
+
+    /* servicios */
+    #servicios_margen{
+        margin-top: 8.5rem;
+    }
+    
+    .flex-container-servicios{
+        margin: 0 3.5rem;
+        padding: 2.4rem 0;
+    }
+    
+    #fondo{
+        width: 8rem;
+        height: 8rem;
+        margin: 0.3rem 0.3rem;
+    }
+    
+    #fondo p{
+        font-size: 1.5rem;  
+    }
+    
+    .img-servicios{
+        width: 8rem;
+        height: 8rem;
+        margin: 0.3rem 0.3rem;
+    }
+
+    
+    /* clientes */
+    #clientes{
+        height: 12rem;
+        margin: 0.2rem;
+    }
 }

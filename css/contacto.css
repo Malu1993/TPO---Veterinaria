@@ -1,5 +1,6 @@
 *{
     margin: 0%;
+    padding: 0;
 }
 
 html{
@@ -33,6 +34,14 @@ body{
 }
 
 /* ----- HEADER ----- */
+
+.header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 .flex-container-nav{
     background-color: #8C377E;
@@ -106,6 +115,10 @@ ul.mostrar{
 }
 
 @media screen and (max-width: 1300px) {
+    .header{
+        z-index: 1;
+    }
+
     .titulo{
         padding-left: 3rem;
     }
@@ -119,6 +132,10 @@ ul.mostrar{
 }  
 
 @media screen and (max-width: 1024px){
+    .header{
+        z-index: 1;
+    }
+
     .flex-container-nav{
         height: 6.5rem;
     }
@@ -256,7 +273,6 @@ ul.mostrar{
 }
 
 .encontranos{
-    height: 8rem;
     color: #F29F05;
     font-family: Raleway;
     text-shadow: 0.2rem 0.2rem rgb(201, 201, 201);
