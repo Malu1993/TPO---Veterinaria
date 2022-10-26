@@ -91,7 +91,7 @@ body{
 .menu li a{
     font-family: Raleway;
     padding: 0.7rem 1.3rem;
-    text-decoration: none;
+    text-decoration: none  ;
     font-size: 2.6rem;
     text-shadow: 0.2rem 0.2rem rgb(134, 134, 134);
     color: #ffff;
@@ -156,7 +156,7 @@ ul.mostrar{
     text-align: center;
     align-items: center;
     position: absolute;
-    background-color: rgba(225, 0, 255, 0.1);
+    background-color: rgba(255,0 , 255, 0.1);
     border-radius: 50%;
     top: 0;
     width: 14.4rem;
@@ -237,6 +237,25 @@ ul.mostrar{
     color: white;
     transform: scale(1.2);
 
+}
+
+/* ----- Sorteo ----- */
+
+.flex-sorteo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+.flex-sorteo div {
+    border:#F2B90C 5px solid;
+    border-radius: 8%;
+}
+
+.seccion-1 p{
+    font-family: Yantra;
+    font-size: 1.5rem;
 }
 
 /* ----- Sección mapa ----- */
