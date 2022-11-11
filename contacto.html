@@ -32,52 +32,53 @@
         <div class="titulo1"><h1>Contactanos</h1></div>
         <hr>
         <br>
-        <section  class="formulario">
-            <div class="grid-container_1">
+        <section class="fuente-formulario">
+            <div class="formulario">
                 <div class="texto">
-                    Si queres contactarnos por alguna consulta o sacar turno para tu mascota, podes hacerlo a través de nuestras redes o completando el siguiente formulario.
+                    <p>Si queres contactarnos por alguna consulta o sacar turno para tu mascota, podes hacerlo a través de nuestras redes o completando el siguiente formulario.</p>
                 </div>
-
-                <div class="formulario">
-                    <p><b>Formulario</b></p>
-                    <form id="formulario1" action="https://formspree.io/f/meqdvdgw" method="post">
-                            <br><br>
+                <form id="formulario1" action="https://formspree.io/f/meqdvdgw" method="post">
+                    <div class="grid-container_formulario">
+                        <div class="titulo-formulario">
+                            <p>Formulario</p>
+                        </div>
+                        <div class="datos_formulario">
                             <div class="flex-container">
                                 <div id="datos">
                                     <div class="labels" id="div-nombre">
-                                        <label for="name"><b>Nombre:</b> </label>
+                                        <label for="name"><b>Nombre:</b> </label><br>
                                         <input type="text" name="nombre" id="nombre" required>
                                     </div>
                                     
                                     <div class="labels" id="div-apellido">
-                                        <label for="surname"><b>Apellido:</b></label>
+                                        <label for="surname"><b>Apellido:</b></label><br>
                                         <input type="text" name="apellido" id="apellido" required>
                                     </div>
                                     
                                     <div class="labels" id="div-correo">
-                                        <label for="mail"><b>Correo Electrónico:</b></label>
+                                        <label for="mail"><b>Correo Electrónico:</b></label><br>
                                         <input type="email" name="correo" id="correo" required>
                                     </div>
                                     
                                     <div class="labels" id="div-telefono">
-                                        <label for="phone"><b>Telefono de contacto:</b></label>
+                                        <label for="phone"><b>Telefono de contacto:</b></label><br>
                                         <input type="tel" name="telefono" id="telefono" required>
                                     </div>
                                 </div>
-                                <div id="mensaje">
-                                    <label for=""> <b>Mensaje</b>
-                                        <br><br>
-                                        <textarea name="texto" id="" cols="50" rows="15">Escriba aquí su consulta.</textarea>
-                                    </label>
-                                    <br><br>
-                                    <input id="enviar" type="submit" value="Enviar">
-                                </div>
                             </div>
-                    </form>
-                </div>
+                        </div>
+                        <div id="mensaje">
+                            <label for=""> <b>Mensaje</b>
+                                <br><br>
+                                <textarea name="texto" id="" cols="50" rows="15">Escriba aquí su consulta.</textarea>
+                            </label>
+                            <input id="enviar" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
         <hr>
         <br><br>
         <section>

@@ -188,6 +188,7 @@ ul.mostrar{
 
 /* ----- MAIN ----- */
 
+/* Titulo "Contactanos" */
 .titulo1{
     height: 8rem;
     color: #F29F05;
@@ -198,22 +199,15 @@ ul.mostrar{
     padding-top: 2.2rem;
 }
 
-.formulario{
-    margin-left: 8rem;
+/* --- Seccion Formulario --- */
+.fuente-formulario{
     font-family: Raleway;
 }
 
-
-.formulario p{
-    margin-left: 32rem;
-    font-size: 2.4rem;
-}
-
-
-.grid-container_1{
-    display: grid;
-    grid-template-columns: 32rem 128rem;
-    grid-template-rows: 28.8rem
+.formulario{
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
 }
 
 .texto{
@@ -230,23 +224,41 @@ ul.mostrar{
     border-style: solid;
     background-color: #BF84B5;
     font-family: Monserrat;
-    margin-left: 1.6rem;
-    margin-top: 6.4rem;
+    margin: auto;
+    max-width: 22rem;
+}
+
+#formulario1{
+    margin: auto;
+}
+
+.grid-container_formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    
+}
+.titulo-formulario{
+    font-weight: bold;
+    font-size: 2.4rem;
+    font-family: Raleway;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-height: 3rem;
 }
 
 .flex-container{
     display: flex;
+    justify-content: center;
 }
 
 #datos{
-    padding: 0.2rem;
-    line-height: 3.2rem;
-    padding-left: 11.2rem;
+    padding-left: 2rem;
+    line-height: 3.3rem;
     font-size: 1.5rem;
-}
-
-.labels{
-    width: 16rem;
+    align-items: flex-start;
 }
 
 .labels-incorrecto{
@@ -256,7 +268,6 @@ ul.mostrar{
 }
 
 #mensaje{
-    padding-left: 8rem;
     align-items: flex-end;
     font-size: 1.5rem;
 }
@@ -272,6 +283,12 @@ ul.mostrar{
 	background-color:#F29F05;
 }
 
+textarea{
+    width: 100%;
+}
+
+/* --- Seccion "Donde encontrarnos" --- */
+
 .encontranos{
     color: #F29F05;
     font-family: Raleway;
@@ -280,6 +297,7 @@ ul.mostrar{
     margin-left: 8rem;
 }
 
+/* -- Mapa -- */
 .grid-container_2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -301,7 +319,6 @@ ul.mostrar{
 }
 
 #mapa{
-    /* background-color: #a00; */
     grid-column-start: 2;
     grid-column-end: 4;
 }
@@ -338,4 +355,100 @@ ul.mostrar{
 
 .fotos-redes{
     padding-left: 4rem;
+}
+
+@media screen and (max-width: 1010px){
+    
+    /* --- Texto --- */
+    .texto{
+        font-size: 1.4rem;
+        padding-left: 2.8rem;
+        line-height: 2.8rem;
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        padding-right: 4.4rem;
+        border-width: 0.3rem;
+        border-radius: 0.3rem;
+        margin: auto;
+        max-width: 22rem;
+    }
+
+    /* --- Formulario --- */
+    .titulo-formulario{
+        font-size: 2rem;
+    }
+
+    #datos{
+        line-height: 2.8rem;
+        font-size: 1.2rem;
+    }
+
+    .labels-incorrecto{
+        width: 16rem;
+    }
+
+    #mensaje{
+        font-size: 1.2rem;
+    }
+        
+    textarea{
+        height: 19rem;
+    }
+
+    /* --- Mapa --- */
+    .grid-container_2{
+        gap: 2rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
+    
+    
+    #direccion p{
+        padding: 6rem 2rem;
+        font-size: small;
+    }
+    
+    #mapa{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    
+    #mapa iframe{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .formulario{
+        display: block;
+    }
+
+    .texto{
+        font-size: 1.4rem;
+        padding: 2rem;
+        line-height: 3rem;
+        max-width: fit-content;
+        margin-bottom: 3rem;
+    }
+
+    .flex-container{
+        justify-content: left;
+    }
+    #datos{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .encontranos{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .titulo1{
+        font-size: 1.8rem;
+        padding-top: 0.2rem;
+        height: 6rem;
+    }
 }

@@ -479,9 +479,6 @@ ul.mostrar{
         margin: 2rem auto;
     }
     
-    #datos{
-
-    }
     
     #datos p{
         padding: 6rem 2rem;
@@ -489,7 +486,6 @@ ul.mostrar{
     }
     
     #mapa{
-        /* background-color: #a00; */
         grid-column-start: 2;
         grid-column-end: 4;
     }
